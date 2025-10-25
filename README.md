@@ -20,12 +20,13 @@ sudo apt install git
 ```
 
 ### Verificar versión
-`git -v`
-
+```bash
+git -v
+```
 
 ### Ayuda
 ```bash
-git --h
+git -h
 ```
 
 ---
@@ -36,9 +37,13 @@ Configurar Git a nivel global en `/home/usuario`:
 
 ```bash
 git config --global user.name "Tu Nombre"
+```
+```bas
 git config --global user.email "tuemail@example.com"
 ```
-
+```bash
+git config --global init.defaultBranch main
+```
 La configuración se guarda en el archivo `.gitconfig`
 
 ### Ver la configuración
@@ -48,12 +53,12 @@ git config -l
 
 ---
 
-## 🚀 Primer Proyecto: HolaGit
+## Crear Proyecto: proyecto1
 
 ### 1. Crear la carpeta del proyecto
 ```bash
-mkdir HolaGit
-cd HolaGit/
+mkdir proyecto1
+cd proyecto1/
 ```
 
 ### 2. Abrir VSCode
@@ -73,9 +78,9 @@ Se crea una carpeta `.git` donde se guarda la referencia de todo lo que hacemos.
 ## 📝 Add y Commit
 
 ### 1. Crear el primer archivo
-Crear `hellogit.py` con el siguiente contenido:
-```python
-print("Hola")
+Crear `ejemplo1.txt` con el siguiente contenido:
+```bash
+Este es el ejemplo1
 ```
 
 ### 2. Ver el estado del proyecto
@@ -85,7 +90,7 @@ git status
 
 ### 3. Añadir el fichero al staging
 ```bash
-git add hellogit.py
+git add .
 ```
 
 ### 4. Ver nuevamente el estado
@@ -95,14 +100,14 @@ git status
 
 ### 5. Hacer el primer commit
 ```bash
-git commit -m "Este es mi primer commit"
+git commit -m "Creación de ejemplo1.txt"
 ```
-
+Intentaremos utilziar un nombre descriptivo del contenido
 Se crea un Hash para identificarlo (ejemplo: `2fe5258`)
 
 ---
 
-## 📊 Log - Historial de Commits
+## Log - Historial de Commits
 
 ### Ver los commits
 ```bash
@@ -110,13 +115,17 @@ git log
 ```
 
 ### Crear un segundo archivo
-Crear `hellogit2.py`
+Crear `ejemplo2.txt`
 
 ### Añadir y hacer commit
 ```bash
 git status
-git add hellogit2.py
-git commit -m "Este es mi segundo commit"
+```
+```bash
+git add ejemplo2.txt
+```
+```bash
+git commit -m "Añadimos el ejemplo2.txt"
 ```
 
 ### Ver el log actualizado
@@ -131,7 +140,7 @@ Ahora tenemos dos estados en nuestra rama principal, con **HEAD** apuntando al �
 ## ↩️ Git Checkout - Descartar Cambios
 
 ### 1. Modificar archivos
-Editar `hellogit.py` y `hellogit2.py`
+Editar `ejemplo1.txt` y `ejemplo2.txt`
 
 ### 2. Ver cambios detectados
 ```bash
@@ -140,23 +149,25 @@ git status
 
 ### 3. Descartar cambios en un archivo
 ```bash
-git checkout hellogit2.py
+git checkout ejemplo2.txt
 ```
 
 Esto descarta los cambios y vuelve al estado anterior.
 
 ### 4. Descartar cambios en otro archivo
 ```bash
-git checkout hellogit.py
+git checkout ejemplo1.txt
 ```
 
 ### 5. Hacer una nueva modificación válida
-Modificar `hellogit.py` con un nuevo cambio que sí queremos guardar.
+Modificar `ejemplo1.txt` con un nuevo cambio que sí queremos guardar.
 
 ### 6. Añadir y hacer commit
 ```bash
-git add hellogit.py
-git commit -m "Actualización del print"
+git add ejemplo1.txt
+```
+```bash
+git commit -m "Actualización de ejemplo1.txt"
 ```
 
 ### 7. Ver logs simplificados
@@ -166,7 +177,7 @@ git log --oneline
 
 ---
 
-## 🚫 Gitignore - Ignorar Archivos
+## Gitignore - Ignorar Archivos
 
 ### 1. Crear el archivo .gitignore
 ```bash
@@ -185,7 +196,7 @@ Añadir la siguiente línea:
 **/*.tmp
 ```
 
-Los dos asteriscos `**` indican "en cualquier directorio".
+Los dos asteriscos `**/` indican "en cualquier directorio".
 
 ### 4. Verificar que funciona
 ```bash
@@ -197,7 +208,11 @@ El archivo `uno.tmp` no aparece.
 ### 5. Añadir .gitignore al repositorio
 ```bash
 git add .gitignore
+```
+```bash
 git commit -m "Se añade el fichero .gitignore"
+```
+```bash
 git status
 ```
 
@@ -212,7 +227,7 @@ git log --oneline
 
 ### 1. Volver a un commit anterior
 ```bash
-git checkout 6b44a72
+git checkout ID_commit
 ```
 
 Solo aparecerán los archivos existentes en ese punto del historial.
@@ -231,7 +246,7 @@ git log --all --oneline
 
 ### 4. Volver al último estado
 ```bash
-git checkout 46c3bdc
+git checkout ID_commit
 ```
 
 No es necesario poner el Hash completo, solo los primeros caracteres.
@@ -265,7 +280,3 @@ Todos los archivos vuelven a aparecer. Git almacena todos los cambios, eso es el
 | `git checkout <archivo>` | Descartar cambios |
 | `git checkout <hash>` | Moverse a un commit |
 | `git config -l` | Ver configuración |
-
----
-
-**Nota:** Esta práctica nos permite entender cómo Git almacena y gestiona los cambios en nuestros proyectos, permitiéndonos viajar en el tiempo entre diferentes versiones del código.
