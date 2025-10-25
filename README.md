@@ -15,7 +15,11 @@ Git trabaja con tres áreas principales:
 
 ```bash
 sudo apt update
+```
+```bash
 sudo apt policy git
+```
+```bash
 sudo apt install git
 ```
 
@@ -53,11 +57,13 @@ git config -l
 
 ---
 
-## Crear Proyecto: proyecto1
+## Crear Proyecto
 
 ### 1. Crear la carpeta del proyecto
 ```bash
 mkdir proyecto1
+```
+```bash
 cd proyecto1/
 ```
 
