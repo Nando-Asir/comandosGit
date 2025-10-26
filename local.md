@@ -1,4 +1,6 @@
-# Repositorio Local
+# [Repositorio Local](README.md)
+
+---
 
 ## 🔧 Instalación de Git
 
@@ -11,6 +13,9 @@ sudo apt policy git
 ```bash
 sudo apt install git
 ```
+
+---
+
 
 ### Verificar versión
 ```bash
