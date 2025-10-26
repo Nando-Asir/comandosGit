@@ -1,6 +1,20 @@
-# Comandos de Git
+# <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git Logo" width="30"/> Comandos de Git
 
-## Conceptos Clave
+---
+
+## 📜 Índice
+
+### 🖥️ [Repositorio Local](local.md)
+
+### 🌐 [Repositorio de Github](origin.md)
+
+### 🌐 [Conceptos Claves](#-conceptos-claves)
+
+### 📦 [Comandos](#-comandos)
+
+---
+
+## [Conceptos Clave](#-índice)
 
 - **Working Directory:** Donde trabajamos con nuestros archivos
 - **Staging Area:** Donde preparamos los cambios antes de confirmarlos
@@ -11,7 +25,7 @@
 
 ---
 
-## Comandos Resumen
+## (Comandos](#-índice)
 
 | Comando | Descripción |
 |---------|-------------|
@@ -27,5 +41,3 @@
 | `git config -l` | Ver configuración |
 
 ---
-
-## [Repositorio Local](local.md)
