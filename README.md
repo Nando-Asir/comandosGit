@@ -8,9 +8,9 @@
 
 ### 🌐 [Repositorio de Github](origin.md)
 
-### 🌐 [Conceptos Claves](#-conceptos-claves)
+### 📒 [Conceptos Claves](#-conceptos-claves)
 
-### 📦 [Comandos](#-comandos)
+### ✔️ [Comandos](#-comandos)
 
 ---
 
