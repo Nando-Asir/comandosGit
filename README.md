@@ -39,5 +39,9 @@
 | `git checkout <archivo>` | Descartar cambios |
 | `git checkout <hash>` | Moverse a un commit |
 | `git config -l` | Ver configuración |
+| `git clone <URL>` | Clonamos el repositorio |
+| `git merge <rama>` | Unimos las ramas |
+| `git push <repoGithub> <ramaLocal>` | Subimos los cambios a Github |
+| `git pull` | Trae los cambios de Github que no tenemos en local |
 
 ---
