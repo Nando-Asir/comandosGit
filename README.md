@@ -4,13 +4,13 @@
 
 ## 📜 Índice
 
-### 🖥️ [Repositorio Local](local.md)
+### 🖥️ [Ir a Repositorio Local](local.md)
 
-### 🌐 [Repositorio de Github](origin.md)
+### 🌐 [Ir a Repositorio de Github](origin.md)
 
-### 📒 [Conceptos Claves](#-conceptos-claves)
+### 📒 [Ir a Conceptos Claves](#-conceptos-claves)
 
-### ✔️ [Comandos](#-comandos)
+### ✔️ [Ir a Comandos](#-comandos)
 
 ---
 
