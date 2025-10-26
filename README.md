@@ -25,7 +25,7 @@
 
 ---
 
-## (Comandos](#-índice)
+## [Comandos](#-índice)
 
 | Comando | Descripción |
 |---------|-------------|
